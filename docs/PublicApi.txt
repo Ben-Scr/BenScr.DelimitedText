@@ -1,0 +1,31 @@
+BenScr.DelimitedText.CsvFormatException : System.FormatException
+  Constructor Void .ctor(System.String, Int64, Int64)
+  Method Int64 get_Column()
+  Method Int64 get_Line()
+  Property Int64 Column
+  Property Int64 Line
+BenScr.DelimitedText.CsvNewline : System.Enum
+  Field BenScr.DelimitedText.CsvNewline CrLf
+  Field BenScr.DelimitedText.CsvNewline Lf
+  Field Int32 value__
+BenScr.DelimitedText.CsvOptions : System.Object
+  Constructor Void .ctor(Char, BenScr.DelimitedText.CsvNewline, Int32, Int32, Int32)
+  Method BenScr.DelimitedText.CsvNewline get_Newline()
+  Method Char get_Delimiter()
+  Method Int32 get_MaxColumns()
+  Method Int32 get_MaxFieldLength()
+  Method Int32 get_MaxRecordLength()
+  Property BenScr.DelimitedText.CsvNewline Newline
+  Property Char Delimiter
+  Property Int32 MaxColumns
+  Property Int32 MaxFieldLength
+  Property Int32 MaxRecordLength
+BenScr.DelimitedText.CsvReader : System.Object
+  Constructor Void .ctor(System.IO.TextReader, BenScr.DelimitedText.CsvOptions, Boolean)
+  Method System.String[] ReadRecord()
+  Method Void Dispose()
+BenScr.DelimitedText.CsvWriter : System.Object
+  Constructor Void .ctor(System.IO.TextWriter, BenScr.DelimitedText.CsvOptions, Boolean)
+  Method Void Dispose()
+  Method Void Flush()
+  Method Void WriteRecord(System.Collections.Generic.IReadOnlyList`1[System.String])

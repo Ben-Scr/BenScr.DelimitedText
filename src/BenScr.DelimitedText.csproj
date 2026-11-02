@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <PackageId>BenScr.DelimitedText</PackageId>
+    <AssemblyName>BenScr.DelimitedText</AssemblyName>
+    <RootNamespace>BenScr.DelimitedText</RootNamespace>
+    <Version>1.0.0</Version>
+    <Authors>Ben Schneider</Authors>
+    <Description>Strict streaming CSV text readers and writers with explicit dialects, bounded records, position-aware errors and lossless quoting.</Description>
+    <PackageTags>csv;delimited;text;streaming;parser</PackageTags>
+    <PackageProjectUrl>https://github.com/Ben-Scr/BenScr.DelimitedText</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Ben-Scr/BenScr.DelimitedText</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <None Include="../LICENSE.txt" Pack="true" PackagePath="/" />
+    <None Include="../branding/BenScr_Icon_Master.png" Pack="true" PackagePath="/icon.png" />
+  </ItemGroup>
+</Project>
